@@ -2,51 +2,46 @@
   <img src="https://i.imgur.com/T1xCI92.png" height='300'/>
 </p>
 
-# ✍️ 
-> A simple database using MySQL - 12/09/2022
-
-## 🎯 Objective
+# 🗂️ Simple-Database 
+> A simple database using MySQL
 
 ## 📜 Requirements
-1. [Requirements]
-2. [Requirements]
+1. Docker 20.10 or newer
+2. MySQL
 
 ## ⚙️ Installation
 
 ```
+#instalando o repositorio docker no computador
+docker pull mysql:latest
 
+docker run --name db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123 mysql:latest
 
+#importando o arquivo Dockerfile
+cd Desktop
+cat Dockerfile
+
+#criando uma imagem
+docker build -t simple-database .
+
+#criando um container para a imagem acima
+docker run --name db2 -p3306:3306 -d simple-database
 ```
 
 ## 📝 Features & Commands
 
-- [Command]
-- [Command]
-- [Command]
-- [Command]
-
-## 🖼️ Some Examples
-  <img src="https://i.imgur.com/T1xCI92.png" height='200'/><br>
+- docker exec -it db2 /bin/bash
+- mysql -u root -p
+- show databases;
+- use users;
+- show tables;
+- select * from users;
   
 ## 🌎 Locales
 Currently available locales are:
-- Brazilian Portuguese (pt_br)
-
-## 🤝 Contributing
-1. [Fork the repository](https://github.com/JohnnyHall/readme-markdown-template/fork)
-2. Clone your fork: `git clone https://github.com/JohnnyHall/readme-markdown-template.git`
-3. Stage changes `git add .`
-4. Commit your changes: `cz` OR use `git commit`
-5. Submit a pull request
-
-## 🖌️ Themes
-
-## 🤝 Related Projects
-
-## 👤 Developers
- - João Victor Rokemback Tápparo
+- English (en)
 
 <p align="center">
   Created on <br>
-  dd/mm/yyyy
+  12/09/2022
 </p>
