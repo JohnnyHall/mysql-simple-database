@@ -7,10 +7,9 @@
 
 ## 📜 Requirements
 1. Docker 20.10 or newer
-2. MySQL
+2. MySQL 8.0.30 for Linux on x86_64 or newer
 
 ## ⚙️ Installation
-
 ```
 #instalando o repositorio docker no computador
 docker pull mysql:latest
@@ -27,8 +26,7 @@ docker build -t simple-database .
 #criando um container para a imagem acima
 docker run --name db2 -p3306:3306 -d simple-database
 ```
-
-## 📝 Features & Commands
+## 📝 Commands
 
 - docker exec -it db2 /bin/bash
 - mysql -u root -p
