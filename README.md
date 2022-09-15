@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/X6bur7W.png" height='300'/>
 </p>
 
-# 🗂️ Simple-Database 
+# 🗂️ MySQL-Simple-Database 
 > A simple database using MySQL
 
 ## 📜 Requirements
@@ -25,12 +25,9 @@ docker build -t simple-database .
 
 #criando um container para a imagem acima
 docker run --name db2 -p3306:3306 -d simple-database
-```
-## 📝 Commands
 
-- docker exec -it db2 /bin/bash
-- mysql -u root -p
-- show databases;
+```
+## 📝 MySQL Commands
 - use users;
 - show tables;
 - select * from users;
