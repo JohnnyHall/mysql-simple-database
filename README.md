@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/T1xCI92.png" height='300'/>
+  <img src="https://i.imgur.com/X6bur7W.png" height='300'/>
 </p>
 
 # 🗂️ Simple-Database 
